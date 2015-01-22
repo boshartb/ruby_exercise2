@@ -4,11 +4,17 @@ students = {
 	:cohort3 => 22
 }
 
-def display_cohort(students)
+def print_cohort(students)
 	students.each do |cohort, count|
 		puts "#{cohort}: #{count}"
 	end
 end
 
 puts "		Step 1 - "
-display_cohort(students)
+print_cohort(students)
+
+students[:cohort4] = 43
+puts "		Step 2 - "
+print_cohort(students)
+
+
