@@ -20,6 +20,17 @@ print_cohort(students)
 puts "		Step 3 - "
 puts students.keys
 
-Puts "		Step 4 - "
+puts "		Step 4 - "
+students.each {|key,value| students[key] = (1.05*value).to_i}
+print_cohort(students)
+
+puts "		Step 5 - "
+students.delete(:cohort2)
+print_cohort(students)
+
+
+
+
+
 
 
