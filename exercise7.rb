@@ -28,7 +28,17 @@ puts "		Step 5 - "
 students.delete(:cohort2)
 print_cohort(students)
 
-
+puts "		Step 6 - "
+total = 0
+students.each do |key, value|
+	total += value
+end
+puts "The sum total of all students before increase is  #{total}"
+total = 0
+students.each do |key, value|
+	total += value*1.05
+end
+puts "The sum total of all students after increase is  #{total}"
 
 
 
