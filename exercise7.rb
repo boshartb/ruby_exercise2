@@ -17,4 +17,9 @@ students[:cohort4] = 43
 puts "		Step 2 - "
 print_cohort(students)
 
+puts "		Step 3 - "
+puts students.keys
+
+Puts "		Step 4 - "
+
 
